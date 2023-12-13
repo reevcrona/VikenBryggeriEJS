@@ -195,12 +195,93 @@ section.section-carousel{
     max-width: 350px;
     min-width: 350px;
 }
-.carousel-h2,.carousel-p{
+.carousel-text-button{
+    padding: 0.7em 1.5em;
+    color:#FFF;
+    background-color: #0C0F0A;
+    font-size: 1.4rem;
+    font-weight: 900;
+    transition: ease-out 0.3s;
+    font-family: "Roboto",sans-serif;
+    text-shadow: 2px 2px black;
+    border-radius: 2px;
+    position: relative;
+    z-index: 1;
+    margin-top:1em;
+}
+.carousel-text-button::before{
+    transition: 0.3s all ease;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+}
+.carousel-text-button:hover::before{
+    transition: 0.3s all ease;
+    right:0;
+    opacity: 1;
+    z-index: -1;
+}
+.ella-button{
+    border: 2px solid #9CFFFA;
+    
+}
+.ella-button::before{
+    background-color: #6DB2AF;
+}
+.fortet-button{
+    border: 2px solid #4464AD;
+}
+.fortet-button::before{
+    background-color: #2F4679;
+}
+.isskeppet-button{
+    border:2px solid #fff;
+}
+.isskeppet-button::before{
+    background-color: #CCCCCC;
+}
+.neighbours-button{
+    border:2px solid #EC91D8;
+}
+.neighbours-button::before{
+    background-color: #BC74AC;
+}
+.pilsner-button{
+    border:2px solid #5FAD41;
+}
+.pilsner-button::before{
+    background-color: #4C8A34;
+}
+.summer-button{
+    border: 2px solid #F9A620;
+}
+.summer-button::before{
+    background-color: #C78419;
+}
+.svinbådan-button{
+    border:2px solid #314CB6;
+}
+.svinbådan-button::before{
+    background-color: #273C91;
+}
+.weiss-button{
+    border:2px solid #7D4600;
+    margin-bottom:4em;
+}
+.weiss-button::before{
+    background-color: #643800;
+}
+
+.carousel-h2,.carousel-p,.carousel-text-button{
     opacity: 1;
     transition: opacity 0.5s;
 }
 
-.carousel-h2.hidden, .carousel-p.hidden{
+.carousel-h2.hidden, .carousel-p.hidden,.carousel-text-button.hidden{
     opacity:0;
     
 }

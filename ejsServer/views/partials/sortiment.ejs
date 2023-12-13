@@ -29,46 +29,17 @@
 
     <main>
         <div class="grid-container">
-            <div class="grid-item">
-                <img src="/images/Ella's IPA.jpg" alt="">
-                <h3 class="ella">Ella’s IPA</h3>
-                <button class="ella-button">Läs mer</button>
-            </div>
-            <div class="grid-item">
-                <img src="/images/Fortets IPA.jpg" alt="">
-                <h3 class="fortet">Fortets IPA</h3>
-                <button class="fortet-button" >Läs mer</button>
-            </div>
-            <div class="grid-item">
-                <img src="/images/Isskeppets vinter.jpg" alt="">
-                <h3>Isskeppet</h3>
-                <button class="isskeppet-button">Läs mer</button>
-            </div>
-            <div class="grid-item">
-                <img src="/images/Neighbours choice hazy neipa.jpg" alt="">
-                <h3 class="neighbours">Neighbours Choice</h3>
-                <button class="neighbours-button">Läs mer</button>
-            </div>
-            <div class="grid-item">
-                <img src="/images/Pilsner craft brewed.jpg" alt="">
-                <h3 class="pilsner">Pilsner</h3>
-                <button class="pilsner-button">Läs mer</button>
-            </div>
-            <div class="grid-item">
-                <img src="/images/Summer fusion.jpg" alt="">
-                <h3 class="summer">Summer Fusion</h3>
-                <button class="summer-button">Läs mer</button>
-            </div>
-            <div class="grid-item">
-                <img src="/images/svinbådan lager saaz perle.jpg" alt="">
-                <h3 class="svinbådan">Svinbådan Lager</h3>
-                <button class="svinbådan-button">Läs mer</button>
-            </div>
-            <div class="grid-item">
-                <img class="small-pic" src="/images/WeiB.jpg" alt="">
-                <h3 class="weiss">Weiß</h3>
-                <button class="weiss-button">Läs mer</button>
-            </div>
+            <% beerData.forEach(beer => { %>
+                <div class="grid-item">
+                    <a href="/sortiment/<%= encodeURIComponent(beer.name) %>">
+                    <img src="<%= beer.img %>" alt="<%= beer.name %> Image">
+                    </a>
+                    <h3 class="<%= beer.h3Class %>"><%= beer.name %></h3>
+                    <a href="/sortiment/<%= encodeURIComponent(beer.name) %>">
+                    <button class="<%= beer.buttonClass %>">Läs mer</button>
+                    </a>
+                </div>
+              <% }); %>
         </div>
     </main>
 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <title>Viken Bryggeri</title>
+</head>
+<body>
+    <%- include("header.ejs")%>
+
+    <h1><%= beer.name %></h1>
+    <img src="<%= beer.img %>" alt="<%= beer.name %> Image">
+    <p>Description: <%= beer.description %></p>
+    <a href="/beerstorage">Back to Beer Storage</a>
+
+
+    <%- include("footer.ejs")%>
+
+    <script src="/JS/home.js"></script>
+</body>
+</html>
