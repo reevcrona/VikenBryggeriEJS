@@ -1,0 +1,131 @@
+/*
+footer section
+*/
+
+.footer-container{
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 332px;
+    
+    
+}
+.footer-h2{
+    font-family: 'Poppins';
+    font-size: 3rem;
+    margin:0;
+}
+
+.footer-h3{
+    font-size: 1.5rem;
+    margin:1em 0 1em 0 ;
+}
+  i{
+    color: red;
+    margin:0 0.4em 0 0;
+    font-size:1rem;
+}
+.list-text{
+    font-size: 1rem;
+}
+.footer-fb{
+    width:0.875rem;
+}
+footer li{
+    padding-bottom: 0.5em;
+}
+footer ul{
+    padding:0;
+    margin:0 0 1em 0;
+    text-align: left;
+}
+footer{
+    background-color: #1A1D1A;
+    
+    
+}
+
+.email-h2-p1,.email-h2-p2{
+    color:#fff;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    margin:0;
+}
+
+.email-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 332px;
+    text-align: center;
+    border-top: 2px solid black;
+}
+#email{
+    width: 100%;
+    box-sizing: border-box; 
+    padding:0.5em 0.8em 0.5em 0.8em; 
+    margin:1em 0 1em 0;
+    border-radius: 0.8em;
+    font-size: 1rem; 
+    border: none;
+    font-size: 1.5rem;
+    
+}
+.email-h2-p2{
+    font-weight: 900;
+}
+#email:focus{
+    outline: 2px solid red; 
+}
+.input-button{
+    padding:0.8em 3.5em 0.8em 3.5em;
+    border-radius: 1.5em;
+    border:none;
+    font-size:1.3rem;
+    background-color: red;
+    color:#fff;
+}
+.input-button:hover{
+    background-color: #fff;
+    color:black;
+}
+.input-button:focus{
+    outline:2px solid white;
+}
+.adress{
+    width:16px;
+}
+
+/*
+footer section
+*/
+
+@media(min-width:1000px){
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+        align-items: start;
+    }
+    .email-container,.footer-container{
+        justify-content: start;
+        min-height: auto;
+        flex:1;
+        margin: 2.5em 0 2.5em 0;
+    }
+    .email-container{
+        border-top: none;
+        border-left: 2px solid black;
+    }
+    .footer-container ul{
+        margin:0;
+    }
+    .email-h2-p1,.email-h2-p2{
+        font-size:3rem;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b5a4bf39.js" crossorigin="anonymous"></script>
+    <title>Viken Bryggeri</title>
+
+</head>
+<body>
+
+
+    <%- include("header.ejs") %>
+    
+
+    <section class="bg-section">
+        <h2 class="quote">Vår ölfilosofi är att brygga öl som vi tycker är riktigt god</h2>
+    </section>
+    
+
+    <main>
+        <div class="main-container">
+            <h2 class="main-header">Här finns vi</h2>
+            <p class="main-p">På Brygghallen möts ni av en grym lokal, 12 sorters hantverksöl på fat och ytterligare 11 på flaska. Gillar du inte öl? Inga problem, vi har även 11 noggrant utvalda och direktimporterade prosecco i absolut världsklass samt grymt gott käk.</p>
+            <p class="main-p">Här kan du även boka ölprovning/visning.</p>
+            <p class="main-p">Kom vänner och häng med oss i en annan del av Höganäs!</p>
+            
+        </div>
+        <div class="bryggneon-container">
+            <h1 class="brygg-neon">Brygg Hallen</h1>
+        </div>
+    </main>
+
+    <section aria-label="öl bilder" class="section-carousel">
+       <div class="carousel-container">
+
+       
+        <div class="carousel" data-carousel>
+       
+        <ul data-slides>
+            <li class="slide ella" data-active>
+                <img src="/images/Ella's IPA.jpg" alt="">
+                <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+            </li>
+            <li class="slide fortets">
+                <img src="/images/Fortets IPA.jpg" alt="">
+                <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+            </li>
+            <li class="slide">
+                <img src="/images/Isskeppets vinter.jpg" alt="">
+                <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+            </li>
+            <li class="slide">
+                <img src="/images/Neighbours choice hazy neipa.jpg" alt="">
+                <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+            </li>
+            <li class="slide">
+                <img src="/images/Pilsner craft brewed.jpg" alt="">
+                <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+            </li>
+            <li class="slide">
+                <img src="/images/Summer fusion.jpg" alt="">
+                <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+            </li>
+            <li class="slide">
+                <img src="/images/svinbådan lager saaz perle.jpg" alt="">
+                <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+            </li>
+            <li class="slide">
+                <img src="/images/WeiB.jpg" alt="">
+                <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+            </li>
+        </ul>
+    </div>
+    <div class="carousel-text">
+        <h2 class="carousel-h2"></h2>
+        <p class="carousel-p">Ella’s IPA (6,2%), vår prisbelönta IPA. Ella blev faktiskt utnämnd till Skånes bästa öl av tidningen Hallå. Ella har fått namnet av den tongivande humlesorten Ella från Australien. Ella är en fruktig och mycket trevlig IPA med en tydlig underton av aprikos, passionsfrukt och karamell.</p>
+    </div>
+</div>
+    </section>
+        
+        
+    <%- include("footer.ejs") %>
+    
+    <script src="/JS/home.js"></script>
+</body>
+</html>

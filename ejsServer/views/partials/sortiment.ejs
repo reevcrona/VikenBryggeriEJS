@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sortiment.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b5a4bf39.js" crossorigin="anonymous"></script>
+    <title>Viken Bryggeri</title>
+</head>
+<body>
+    <%- include("header.ejs") %>
+
+    <section class="sortiment">
+        <div class="section-container">
+            <h1>Vårt sortiment</h1>
+            <p>Här nedan finns alla våra sorter som vi har i vårt sortiment just nu. Sen har vi alltid nya på gång, så håll utkik!  Om den inte finns på hyllan på ditt systembolag så klickar du lätt hem dem på 72 timmar.
+                Övriga öl som vi bryggt som inte finns på systemet går att beställa via Systembolagets privatimport.
+            </p>
+            <p>Som en lite twist på vårt ölbryggeri så har vi även 12 unika prosecco vi importerar från utvalda familjegårdar i Valdobbliadene, Italien.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="/images/Ella's IPA.jpg" alt="">
+                <h3 class="ella">Ella’s IPA</h3>
+                <button class="ella-button">Läs mer</button>
+            </div>
+            <div class="grid-item">
+                <img src="/images/Fortets IPA.jpg" alt="">
+                <h3 class="fortet">Fortets IPA</h3>
+                <button class="fortet-button" >Läs mer</button>
+            </div>
+            <div class="grid-item">
+                <img src="/images/Isskeppets vinter.jpg" alt="">
+                <h3>Isskeppet</h3>
+                <button class="isskeppet-button">Läs mer</button>
+            </div>
+            <div class="grid-item">
+                <img src="/images/Neighbours choice hazy neipa.jpg" alt="">
+                <h3 class="neighbours">Neighbours Choice</h3>
+                <button class="neighbours-button">Läs mer</button>
+            </div>
+            <div class="grid-item">
+                <img src="/images/Pilsner craft brewed.jpg" alt="">
+                <h3 class="pilsner">Pilsner</h3>
+                <button class="pilsner-button">Läs mer</button>
+            </div>
+            <div class="grid-item">
+                <img src="/images/Summer fusion.jpg" alt="">
+                <h3 class="summer">Summer Fusion</h3>
+                <button class="summer-button">Läs mer</button>
+            </div>
+            <div class="grid-item">
+                <img src="/images/svinbådan lager saaz perle.jpg" alt="">
+                <h3 class="svinbådan">Svinbådan Lager</h3>
+                <button class="svinbådan-button">Läs mer</button>
+            </div>
+            <div class="grid-item">
+                <img class="small-pic" src="/images/WeiB.jpg" alt="">
+                <h3 class="weiss">Weiß</h3>
+                <button class="weiss-button">Läs mer</button>
+            </div>
+        </div>
+    </main>
+
+    <%- include("footer.ejs") %>
+
+    <script src="/JS/home.js"></script>
+</body>
+</html>
