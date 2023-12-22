@@ -4,20 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/beer.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b5a4bf39.js" crossorigin="anonymous"></script>
     <title>Viken Bryggeri</title>
 </head>
 <body>
     <%- include("header.ejs")%>
-
-    <h1><%= beer.name %></h1>
-    <img src="<%= beer.img %>" alt="<%= beer.name %> Image">
-    <p>Description: <%= beer.description %></p>
-    <a href="/beerstorage">Back to Beer Storage</a>
-
-
+        <div class="main-container">
+            <div class="grid-container">
+                <div class="beer-image">
+                 <img src="<%= beer.img %>" alt="<%= beer.name %> Image">
+                 <video class="min-video" src="/images/ölGlas.mp4"></video>
+                </div> 
+             <div class="beer-info">
+                 <h1 class="<%= beer.h3Class %> header-lines"><%= beer.name %></h1>
+                 <div class="beer-details">
+                    <div>
+                        <dt>Öl sort:</dt>
+                        <dd><%= beer.beerType %></dd>
+                    </div>
+                    <div>
+                        <dt>Flaska:</dt>
+                        <dd>330ml <%= beer.alkVol %> vol</dd>
+                    </div>
+                 </div>
+                 <div class="origin">
+                    <dt>Färg:</dt>
+                    <dd><%= beer.beerColor %></dd>
+                 </div>
+                 <div class="origin">
+                    <dt>Doft:</dt>
+                    <dd><%= beer.beerScent %></dd>
+                 </div>
+                 <div class="origin">
+                    <dt>Smak:</dt>
+                    <dd><%= beer.beerTaste %></dd>
+                 </div>
+                 <div class="beer-description">
+                    <p>
+                        <%= beer.description %>
+                    </p>
+                 </div>
+                 <div class="system-button">
+                    <a href="<%= beer.systemHref %>">
+                    <button type="button"  class="klicka-button">Klicka här</button>
+                    </a>
+                    <p>för att beställa</p>
+                 </div>
+                 </div>
+                 
+             </div>
+        </div>
+        
     <%- include("footer.ejs")%>
-
+    <script src="/JS/video-overlay.js"></script>
     <script src="/JS/home.js"></script>
 </body>
 </html>

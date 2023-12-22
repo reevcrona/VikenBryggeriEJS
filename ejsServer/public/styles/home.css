@@ -196,6 +196,7 @@ section.section-carousel{
     min-width: 350px;
 }
 .carousel-text-button{
+    width:45%;
     padding: 0.7em 1.5em;
     color:#FFF;
     background-color: #0C0F0A;
@@ -207,7 +208,8 @@ section.section-carousel{
     border-radius: 2px;
     position: relative;
     z-index: 1;
-    margin-top:1em;
+    margin:1em auto 0 ;
+    
 }
 .carousel-text-button::before{
     transition: 0.3s all ease;
@@ -368,6 +370,9 @@ carousel section
         top: 50%;
         transform: translateY(-50%);
     }
+    .carousel-text-button{
+        width:27%;
+    }
     .brygg-neon{
         font-size: 7.2rem;
     }
@@ -400,7 +405,6 @@ carousel section
        
     }
     .carousel{
-        
         height: 450px;
     }
     .slide{
@@ -441,6 +445,10 @@ carousel section
         font-size:1.2rem;
         max-width:450px;
         line-height: 2.3rem;
+    }
+    .carousel-text-button{
+        width: auto;
+        padding: 0.7em 1.5em;
     }
 }
 @media(min-width:1300px){

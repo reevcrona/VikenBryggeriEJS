@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+    background-color: #0C0F0A;
+    height: auto;
+}
+
+.main-container{
+    max-width:1600px;
+   margin: 0 auto;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    color:#fff;
+    margin-top: 4em;
+    height: 100vh;
+    
+}
+.beer-image{
+    width:100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    justify-self: start;
+    position: relative;
+    
+}
+.beer-image img{
+    width:90%;
+   
+    
+}
+.beer-info{
+    margin-left:2em;
+    width:100%;
+}
+.beer-info h1{
+    font-size: 3rem;
+    position: relative;
+    padding-bottom: 0.2rem;
+    font-family: 'Poppins';
+    margin:0;
+}
+.system-button{
+    position: relative;
+    display: flex;
+    
+}
+.system-button button{
+    margin:5rem 0;
+    background-color: #464F51;
+    font-size: 1.4rem;
+    padding:0.4em 0.8em;
+    color:#fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.klicka-button:hover{
+    background-color:#2A2F30 ;
+}
+.system-button p {
+    align-self: center;
+    margin:0 0.6em;
+    font-size:1.4rem;
+}
+.beer-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    position: relative;
+    padding: 1rem 0;
+}
+.beer-details div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.origin{
+    display: flex;
+    flex-direction: row;
+    padding:1rem 0;
+    position: relative;
+}
+.beer-details dt,
+.origin dt {
+    width: 100px; /* Adjust this value as needed */
+    margin-right: 1em; /* Adjust this value as needed for consistent spacing */
+}
+.beer-details dt,
+.beer-details dd ,
+.origin dt,
+.origin dd{
+    margin: 0;
+}
+dt{
+    font-family: 'Archivo Black', sans-serif;
+    font-size:1.1rem;
+}
+ .header-lines::after,.beer-details::after{
+    content:"";
+    position: absolute;
+    width: 110%;
+    height: 1px;
+    background-color: #fff;
+}
+.header-lines::after,.beer-details::after,.origin::after{
+    top:100%;
+    left:0;
+}
+.origin::after{
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 1px;
+    background-color: #fff;
+    
+}
+
+.beer-description p {
+    margin:3em 0 0 0;
+    line-height: 1.6;
+    font-size:1.2rem;
+}
+.min-video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 90%;
+    height: 81%;
+    object-fit: cover;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    
+}
+.ella{
+    color:#9CFFFA;
+}
+.fortet{
+    color:#4464AD;
+}
+.neighbours{
+    color:#EC91D8;
+}
+.pilsner{
+    color:#5FAD41;
+}
+.summer{
+    color:#F9A620;
+}
+.svinbådan{
+    color:#314CB6;
+}
+.weiss{
+    color:#7D4600;
+}

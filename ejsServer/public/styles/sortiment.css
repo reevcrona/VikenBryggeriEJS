@@ -67,6 +67,12 @@ main{
     image-rendering: optimizeQuality;
     -ms-interpolation-mode: nearest-neighbor; /* Internet Explorer */
     margin-top:4em;
+    max-width:250px;
+    transition: 0.2s all ease-in-out;
+    
+}
+.grid-item:hover img {
+    transform: scale(1.07);
 }
 .grid-item h3{
     font-size:2rem;
@@ -178,6 +184,11 @@ main{
     opacity: 1;
     z-index: -1;
 }
+@media(min-width:250px){
+    .grid-item img{
+        max-width:300px;
+    }
+}
 
 @media(min-width:550px){
     .grid-item h3{
@@ -217,6 +228,7 @@ main{
         gap:2em;
         margin-top:10em;
         margin-bottom:10em;
+        padding:0 2.9em;
     }
     .grid-item{
         display: flex;
